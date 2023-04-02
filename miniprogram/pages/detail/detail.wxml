@@ -1,0 +1,2 @@
+<!--pages/detail/detail.wxml-->
+<drl-swiper images="{{imageUrls}}"></drl-swiper>

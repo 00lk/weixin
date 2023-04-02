@@ -1,0 +1,16 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <!-- 头像和昵称 -->
+  <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+  <block wx:else>
+  <view class="avatarBox">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}个人主页</text>
+  </view>
+  <van-button plain hairline type="primary" size="large">我的食谱</van-button>
+  <van-button plain hairline type="primary" size="large">发布的食谱</van-button>
+  <van-button plain hairline type="primary" size="large">收藏</van-button>
+  <!-- 浮动按钮 -->
+  <button class="floatBtn" type="primary" size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfo" bindtap="goToAdd">创建食谱</button>
+</block>
+</view>

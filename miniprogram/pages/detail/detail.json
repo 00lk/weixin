@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "drl-swiper":"../../components/swiper/swiper"
+  }
+}
